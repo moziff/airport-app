@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-md-4">
+    <%= form_for(airport) do |f| %>
+      <div class="field">
+        <%= f.label :airport, "First Airport" %><br />
+        <%= f.autocomplete_field :airport, autocomplete_airport_airport_airports_path, id: "first_airport", :placeholder => 'Airport One'%>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="col-md-4">
+    <%= form_for(airport) do |f| %>
+      <div class="field">
+        <%= f.label :airport, "Second Airport" %><br />
+        <%= f.autocomplete_field :airport, autocomplete_airport_airport_airports_path, id: "second_airport", :placeholder => 'Airport Two' %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="col-md-4">
+    <button id="calculate" class="btn btn-primary">Calculate Distance</button>
+  </div>
+</div>

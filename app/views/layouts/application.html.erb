@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Airport Distance Calculator</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag "https://code.jquery.com/jquery-2.2.3.min.js" %>
+  <%= javascript_include_tag "autocomplete-rails.js" %>
+  <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyD61RAhy4DuoHaOLufqX7fqt9S5waKBQ2w" %>
+  <%= csrf_meta_tags %>
+</head>
+  <body class="<%=controller_name%> <%=action_name%>">
+
+      <%= yield %>
+
+  </body>
+</html>
